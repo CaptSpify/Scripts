@@ -2,6 +2,7 @@
 # Allows you to permanantly save up to 10 buffers, without overwriting your normal yank buffers
 # To use: You can either run this from the command-line directly, or bind it. I bind it with:
 # bind-key -n "M-B" run-shell -b "/usr/bin/tmux-permabuffer.sh"
+# You'll need to make sure you have something in all of your current buffers, and something in your permanant buffers (/tmp/.${user}.tmux.permabuffer1, /tmp/.${user}.tmux.permabuffer2, etc et)
 
 user=$(whoami)
 oldbuffer="/tmp/.${user}.tmux.old.buffer"
